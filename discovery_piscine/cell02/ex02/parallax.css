@@ -1,0 +1,54 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	font-family: Arial, sans-serif;
+}
+
+/* คุณสมบัติสำหรับ Parallax Effect */
+.parallax-1, .parallax-2 {
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ภาพที่ 1 */
+.parallax-1 {
+	background-image: url('bg1.jpg');
+}
+
+/* ภาพที่ 2 */
+.parallax-2 {
+	background-image: url('bg2.jpg');
+}
+
+/* กล่องข้อความตรงกลางรูปภาพ */
+.caption {
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #ffffff;
+	padding: 20px 40px;
+	font-size: 1.5rem;
+	letter-spacing: 2px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+/* บล็อกสีดำตรงกลาง */
+.black-block {
+	background-color: #000000;
+	color: #ffffff;
+	padding: 100px 20px;
+	text-align: center;
+	font-size: 1.2rem;
+	line-height: 1.8;
+}
