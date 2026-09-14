@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basics</title>
+    <style>
+        body {
+            background-color: pink; /* พื้นหลังสีชมพู */
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: white;           /* ตัวอักษรสีขาว */
+            text-align: center;     /* จัดกึ่งกลาง */
+            font-size: 3em;
+        }
+        .shop-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 40px;
+        }
+        .shop {
+            text-align: center;
+        }
+        hr {
+            margin: 40px 0;
+        }
+        .copyright {
+            text-align: right;      /* ชิดขวา */
+            font-style: italic;     /* ตัวเอียง */
+            font-family: monospace; /* ฟอนต์ monospace */
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Basics ☆</h1>
+
+    <div class="shop-container">
+        <div class="shop">
+            <img src="data:image/png;base64,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" 
+                 alt="Jib" width="150">
+            <p><a href="https://www.jib.co.th" target="_blank">Go to Jib</a></p>
+        </div>
+        <div class="shop">
+            <img src="https://down-th.img.susercontent.com/file/0aa5de07c908febaf2a78af8a0587799" 
+                 alt="ihavecpu" width="150">
+            <p><a href="https://ihavecpu.com/" target="_blank">Go to ihavecpu</a></p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="copyright">
+        © Kami
+    </div>
+</body>
+</html>
