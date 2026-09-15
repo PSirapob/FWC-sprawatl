@@ -1,0 +1,2 @@
+body { height: 100vh; display: flex; padding: 20px; transition: background-color 0.3s; }
+button { padding: 10px 20px; font-size: 1rem; cursor: pointer; }

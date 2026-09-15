@@ -1,0 +1,3 @@
+body { display: flex; flex-direction: column; align-items: center; padding-top: 50px; }
+#ft_list { width: 300px; margin-top: 20px; }
+.todo-item { background: #fff; padding: 10px; margin-bottom: 5px; border: 1px solid #ccc; cursor: pointer; }
