@@ -1,0 +1,7 @@
+html {
+	scroll-behavior: smooth; /* ทำให้เวลาคลิกเมนู แล้วหน้าจอสไลด์เลื่อนลงไปอย่างนุ่มนวล (Smooth Scroll) */
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* กำหนดฟอนต์หลักของหน้าเว็บ */
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html> <!-- ประกาศว่าเป็นเอกสาร HTML5 -->
+<html lang="en"> <!-- เริ่มต้นแท็ก html และกำหนดภาษาเป็นภาษาอังกฤษ -->
+<head>
+	<meta charset="UTF-8"> <!-- กำหนด Character Encoding เป็น UTF-8 เพื่อรองรับภาษาไทยและอักขระพิเศษ -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ทำให้เว็บรองรับการแสดงผลบนหน้าจอมือถือ (Responsive) -->
+	<title>Team Portfolio - Rush</title> <!-- ชื่อหัวข้อที่จะแสดงบน Tab ของ Web Browser -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- ดึงไฟล์ CSS ของ Bootstrap 5 มาใช้งาน -->
+	<link rel="stylesheet" href="style.css"> <!-- ดึงไฟล์ CSS ที่เราแต่งเองมาใช้งาน -->
+</head>
+<body class="bg-dark text-white vh-100 d-flex align-items-center justify-content-center"> <!-- พื้นหลังสีมืด, ตัวหนังสือสีขาว, ความสูงเต็มจอ, จัดเนื้อหาอยู่ตรงกลางหน้าจอทั้งแนวตั้งและแนวนอน -->
+
+	<div class="text-center p-5 rounded-4 bg-secondary bg-opacity-25 shadow-lg"> <!-- กล่องข้อความ: จัดข้อความตรงกลาง, ใส่ Padding, ทำมุมโค้ง, ใส่พื้นหลังเทาโปร่งแสง และใส่เงา -->
+		<h1 class="display-3 fw-bold mb-3">Welcome to Our Portfolio</h1> <!-- หัวข้อขนาดใหญ่ ตัวหนา เว้นระยะห่างด้านล่าง -->
+		<p class="lead text-light mb-4">Select a team member to view their resume</p> <!-- ข้อความเกริ่นนำขนาดใหญ่ สีขาวสว่าง -->
+		<div class="d-flex justify-content-center gap-3 flex-wrap"> <!-- จัดวางปุ่มให้อยู่ตรงกลาง มีระยะห่างระหว่างปุ่ม และพับลงมาได้ถ้าจอแคบ -->
+			<a href="member1.html" class="btn btn-primary btn-lg px-4">Sirapob P.</a> <!-- ปุ่มลิงก์ไปยังหน้า member1.html สีน้ำเงิน -->
+			<a href="member2.html" class="btn btn-outline-light btn-lg px-4">Pranita S.</a> <!-- ปุ่มลิงก์ไปยังหน้า member2.html เส้นกรอบสีขาว -->
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> <!-- ดึงไฟล์ JavaScript ของ Bootstrap มาช่วยเรื่องระบบโต้ตอบ -->
+</body>
+</html>

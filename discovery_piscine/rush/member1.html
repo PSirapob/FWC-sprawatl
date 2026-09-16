@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Resume - Sirapob Prawatlerdwattana</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="70"> <!-- ใช้ Scrollspy ของ Bootstrap เพื่อเปลี่ยนสถานะปุ่มบน Nav ตามจุดที่เลื่อนอ่าน -->
+
+	<!-- Fixed Navigation Bar (ส่วนแถบเมนูด้านบนที่ล็อกติดหน้าจอ) -->
+	<nav id="navbar-example" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow"> <!-- สร้าง Nav Bar สีมืด, ยึดติดด้านบนสุด (fixed-top) และมีเงา -->
+		<div class="container"> <!-- จัดโครงสร้างให้อยู่ในขอบเขตตรงกลาง -->
+			<a class="navbar-brand fw-bold" href="index.html">← Home</a> <!-- ปุ่มย้อนกลับไปหน้า Home -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> <!-- ปุ่ม แฮมเบอร์เกอร์ สำหรับจอมือถือ -->
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNav"> <!-- เมนูส่วนที่จะถูกย่อในมือถือ จัดวางชิดขวา -->
+				<ul class="navbar-nav"> <!-- รายการเมนู -->
+					<li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li> <!-- ลิงก์กดข้ามไปส่วน #profile -->
+					<li class="nav-item"><a class="nav-link" href="#skills">Skills & Exp</a></li> <!-- ลิงก์กดข้ามไปส่วน #skills -->
+					<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li> <!-- ลิงก์กดข้ามไปส่วน #contact -->
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Section 1: Profile (ส่วนข้อมูลส่วนตัว) -->
+	<section id="profile" class="min-vh-100 d-flex align-items-center bg-light pt-5"> <!-- ความสูงอย่างน้อยเท่าหน้าจอ, จัดกึ่งกลางแนวตั้ง, พื้นหลังสีสว่าง -->
+		<div class="container text-center text-md-start"> <!-- ข้อความอยู่ตรงกลางในมือถือ และอยู่ชิดซ้ายในจอขนาดกลางขึ้นไป -->
+			<div class="row align-items-center"> <!-- แบ่งเป็นแถวและจัดเนื้อหาแนวตั้งให้ตรงกัน -->
+				<div class="col-md-4 text-center mb-4 mb-md-0"> <!-- คอลัมน์ใส่รูปภาพ (กว้าง 4/12 ในจอใหญ่) -->
+					<img src="Pao.jpg" class="rounded-circle img-thumbnail shadow" style="width: 230px; height: 230px; object-fit: cover;" alt="Sirapob Picture"> <!-- แสดงรูปภาพวงกลม ครอปขนาด 230x230px สวยงาม -->
+				</div>
+				<div class="col-md-8"> <!-- คอลัมน์แสดงข้อความ (กว้าง 8/12 ในจอใหญ่) -->
+					<h1 class="display-4 fw-bold">Sirapob Prawatlerdwattana</h1> <!-- แสดงชื่อ-นามสกุลตัวโต -->
+					<h4 class="text-primary mb-3">Student</h4> <!-- แสดงตำแหน่งงาน สีน้ำเงิน -->
+					<p class="lead text-secondary">Enthusiastic student passionate about Digital Innovation, Data Analytics, and Event Operations.</p> <!-- คำอธิบายตัวเองแบบย่อ -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section 2: Skills & Experience (ส่วนประสบการณ์และทักษะ) -->
+	<section id="skills" class="min-vh-100 d-flex align-items-center bg-white py-5"> <!-- พื้นหลังสีขาว มีระยะห่างบน-ล่าง -->
+		<div class="container">
+			<h2 class="text-center fw-bold mb-5">Skills & Experiences</h2> <!-- หัวข้อประจำส่วนนี้ -->
+			<div class="row g-4"> <!-- สร้างระบบ Grid แบ่งเป็น 2 ฝั่ง มีระยะห่างระหว่างกัน -->
+				<div class="col-md-6"> <!-- ฝั่งซ้าย: ประสบการณ์ทำงาน -->
+					<div class="card h-100 shadow-sm border-0 bg-light p-4"> <!-- กล่องการ์ดสีสว่าง มีเงา และไร้เส้นขอบ -->
+						<h3 class="mb-4">Work Experience</h3>
+						<ul class="list-unstyled"> <!-- รายการแบบไม่มีจุดดอทข้างหน้า -->
+							<li class="mb-4">
+								<h5 class="mb-1">Event Volunteer Staff</h5>
+								<span class="badge bg-primary mb-2">Jul 2025</span> <!-- แสดงป้ายกำกับช่วงเวลา -->
+								<p class="mb-0 text-muted">SPLASH - Soft Power Forum 2025 (QSNCC)</p>
+							</li>
+							<li class="mb-4">
+								<h5 class="mb-1">Event Access Scanner</h5>
+								<span class="badge bg-primary mb-2">Jun 2026</span>
+								<p class="mb-0 text-muted">Manufacturing Expo 2026 (BITEC)</p>
+							</li>
+							<li class="mb-3">
+								<h5 class="mb-1">Usher - X Standing</h5>
+								<span class="badge bg-primary mb-2">Sep 2026</span>
+								<p class="mb-0 text-muted">74th Bangkok Gems & Jewelry Fair (QSNCC)</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6"> <!-- ฝั่งขวา: ทักษะความสามารถ -->
+					<div class="card h-100 shadow-sm border-0 bg-light p-4">
+						<h3 class="mb-4">Skills</h3>
+						<div class="d-flex flex-wrap gap-2"> <!-- จัดวางป้ายกำกับทักษะต่อๆ กัน และพับลงมาได้ -->
+							<span class="badge bg-dark p-2 fs-6">Python (Basic)</span>
+							<span class="badge bg-dark p-2 fs-6">SQL (Basic)</span>
+							<span class="badge bg-dark p-2 fs-6">Microsoft Office</span>
+							<span class="badge bg-dark p-2 fs-6">Project Management</span>
+							<span class="badge bg-dark p-2 fs-6">Canva / Design Tools</span>
+							<span class="badge bg-dark p-2 fs-6">Data Analytics & Visualization</span>
+							<span class="badge bg-dark p-2 fs-6">Digital Innovation & Design Thinking</span>
+							<span class="badge bg-dark p-2 fs-6">Basic Cooking & Meal Prep</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section 3: Contact (ส่วนช่องทางติดต่อ) -->
+	<section id="contact" class="min-vh-100 d-flex align-items-center bg-dark text-white py-5"> <!-- พื้นหลังสีมืด ตัวหนังสือสีขาว -->
+		<div class="container text-center">
+			<h2 class="fw-bold mb-4">Get In Touch</h2>
+			<p class="lead mb-4">Connect with me on Instagram!</p>
+			<a href="https://www.instagram.com/sirapob.paopao?stkn=NXF4Y2oydWh0aTUx" target="_blank" class="btn btn-outline-light btn-lg px-4"> <!-- ปุ่มกดไป IG แบบเปิดแท็บใหม่ -->
+				Instagram: @sirapob.paopao
+			</a>
+		</div>
+	</section>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
